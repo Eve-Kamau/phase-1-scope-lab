@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 2,
+    "pending": 0,
+    "failures": 3,
+    "start": "2022-12-06T17:11:58.652Z",
+    "end": "2022-12-06T17:12:00.510Z",
+    "duration": 1858
+  },
+  "tests": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'not bob'",
+        "showDiff": true,
+        "expected": "not bob",
+        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:23:38)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'maybe bob'",
+        "showDiff": true,
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected undefined to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw an error",
+        "showDiff": true,
+        "expected": null,
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw an error\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'not bob'",
+        "showDiff": true,
+        "expected": "not bob",
+        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:23:38)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'maybe bob'",
+        "showDiff": true,
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected undefined to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw an error",
+        "showDiff": true,
+        "expected": null,
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw an error\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
